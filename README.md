@@ -3,7 +3,6 @@
 ## Description
 프로젝트 설명
 
-## Team
 ## 👥 Team
 
 <table>
