@@ -6,3 +6,12 @@ venv/
 .env.*
 *.log
 .ipynb_checkpoints
+
+dataset/
+data/
+checkpoints/
+models/
+weights/
+*.pth
+*.pt
+*.h5
