@@ -87,7 +87,7 @@ SCHP_CONDA_ENV = "schp"
 기존 CIHP 기반 human parsing 방식과 SCHP 방식을 비교한 결과, 유사한 label 결과를 유지하면서도 SCHP가 훨씬 빠른 처리 속도를 보였습니다.
 
 ### CIHP_PGN
-![CIHP result](../docs/images/cihp_resuㅣt.png)
+![CIHP result](../docs/images/cihp_result.png)
 
 ### SCHP
 ![SCHP result](../docs/images/schp_result.png)
