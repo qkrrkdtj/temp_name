@@ -6,12 +6,12 @@ from pathlib import Path
 from tqdm import tqdm
 
 # 프로젝트 경로
-DETECTRON2_PATH = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/detectron2"
-DENSEPOSE_PATH = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/detectron2/projects/DensePose"
+DETECTRON2_PATH = "/path/detectron2"
+DENSEPOSE_PATH = "/path/detectron2/projects/DensePose"
 
-CONFIG_PATH = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/detectron2/projects/DensePose/configs/densepose_rcnn_R_50_FPN_s1x.yaml"
+CONFIG_PATH = "/path/densepose_rcnn_R_50_FPN_s1x.yaml"
 MODEL_PATH = "https://dl.fbaipublicfiles.com/densepose/densepose_rcnn_R_50_FPN_s1x/165712039/model_final_162be9.pkl"
-APPLY_NET_PATH = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/detectron2/projects/DensePose/apply_net.py"
+APPLY_NET_PATH = "/path/detectron2/projects/DensePose/apply_net.py"
 
 PYTHONPATH_VALUE = f"{DETECTRON2_PATH}:{DENSEPOSE_PATH}:" + os.environ.get("PYTHONPATH", "")
 
