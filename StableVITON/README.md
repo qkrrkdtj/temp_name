@@ -89,7 +89,7 @@ WSL 환경에서 DensePose를 실행하기 위해 Detectron2와 DensePose가 필
 - detectron2
 - detectron2/projects/DensePose
 
-###5-3. SCHP
+### 5-3. SCHP
 WSL 환경에서 human parsing을 수행하기 위해 SCHP가 필요합니다.
 
 - simple_extractor.py
@@ -99,3 +99,19 @@ WSL 환경에서 human parsing을 수행하기 위해 SCHP가 필요합니다.
 
 ## 6. config.py 설정
 파이프라인 실행 전 config.py에서 경로를 반드시 수정해야 합니다.
+
+---
+
+## 7. 입력 이미지 넣는 방법
+입력 이미지는 아래 폴더에 넣습니다.
+
+- 사람 이미지: pipeline/input_drop/person
+- 의상 이미지: pipeline/input_drop/cloth
+
+현재 파이프라인은 각 폴더에서 첫 번째 이미지 1장만 사용합니다.
+pipeline/
+└─ input_drop/
+   ├─ person/
+   │  └─ user.jpg
+   └─ cloth/
+      └─ cloth.jpg
