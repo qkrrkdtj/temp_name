@@ -127,9 +127,9 @@ def extract_palette(orig_densepose_dir, dump_dir, output_json, max_images=100):
 
 
 if __name__ == "__main__":
-    orig_densepose_dir = "/media/kccistc/1024AC1A24AC0536/Users/asd/Downloads/zalando-hd-resized/test/image-densepose"
-    dump_dir = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/HR-VITON/data/custom/test/densepose_dumps"
-    output_json = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/HR-VITON/data/custom/test/label_palette.json"
+    orig_densepose_dir = "/path/zalando-hd-resized/test/image-densepose"
+    dump_dir = "/path/test/densepose_dumps"
+    output_json = "/path/test/label_palette.json"
 
     extract_palette(
 	orig_densepose_dir=orig_densepose_dir,
