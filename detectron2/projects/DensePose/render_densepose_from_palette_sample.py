@@ -4,8 +4,8 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/detectron2")
-sys.path.insert(0, "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/detectron2/projects/DensePose")
+sys.path.insert(0, "/path/detectron2")
+sys.path.insert(0, "/path/detectron2/projects/DensePose")
 
 import torch
 import numpy as np
