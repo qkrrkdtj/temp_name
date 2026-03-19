@@ -37,7 +37,6 @@
 - `make_agnostic_mask.py`
 - `postprocess_cloth_mask.py`
 
-
 ---
 
 ## 3. 실행 환경
@@ -71,6 +70,7 @@ project-root/
 ├─ openpose/
 ├─ detectron2/
 └─ Self-Correction-Human-Parsing/
+```
 
 ---
 
@@ -100,6 +100,14 @@ WSL 환경에서 human parsing을 수행하기 위해 SCHP가 필요합니다.
 ## 6. config.py 설정
 파이프라인 실행 전 config.py에서 경로를 반드시 수정해야 합니다.
 
+- STABLEVITON_ROOT
+- OPENPOSE_ROOT
+- DETECTRON2_ROOT
+- DENSEPOSE_ROOT
+- SCHP_ROOT
+- CONDA_ENV
+- SCHP_CONDA_ENV
+
 ---
 
 ## 7. 입력 이미지 넣는 방법
@@ -109,9 +117,29 @@ WSL 환경에서 human parsing을 수행하기 위해 SCHP가 필요합니다.
 - 의상 이미지: pipeline/input_drop/cloth
 
 현재 파이프라인은 각 폴더에서 첫 번째 이미지 1장만 사용합니다.
+```text
 pipeline/
 └─ input_drop/
    ├─ person/
    │  └─ user.jpg
    └─ cloth/
       └─ cloth.jpg
+```
+---
+
+## 8. 실행 방법
+
+python main_pipeline.py
+
+파이프라인은 아래 순서로 동작합니다.
+
+1. 입력 이미지 복사 및 이름 정리
+2. 리사이즈
+3. 배경 제거 및 흰 배경 합성
+4. OpenPose 실행
+5. SCHP 실행
+6. DensePose 실행
+7. Cloth Mask 생성
+8. Agnostic Mask 생성
+9. StableVITON용 dataset 생성
+10. inference 실행
