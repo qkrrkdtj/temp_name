@@ -119,16 +119,24 @@ virtual-fitting-pipeline/
 ---
 
 ## Tech Stack
-- Python
+
+### Backend / Frontend
 - Flask
 - FastAPI
-- OpenCV
+
+### AI / CV
 - PyTorch
+- OpenCV
+
+### Environment
+- Conda
+- WSL Ubuntu
+
+## AI Models / External Modules
+
 - StableVITON
 - OpenPose
 - SCHP
 - Detectron2 / DensePose
 
 ---
-
-
