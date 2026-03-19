@@ -1,0 +1,37 @@
+# ==========================================
+# NT Fit Virtual Try-on Backend Dependencies
+# ==========================================
+
+# 🚀 Core Backend Framework
+fastapi==0.104.1              # FastAPI 웹 프레임워크
+uvicorn[standard]==0.24.0     # ASGI 서버 (표준 라이브러리 포함)
+python-multipart==0.0.6       # 파일 업로드 처리
+
+# 🔧 Development & Production Tools
+pydantic==2.5.0               # 데이터 검증 및 설정
+python-dotenv==1.0.0          # 환경 변수 관리
+aiofiles==23.2.1              # 비동기 파일 처리
+httpx==0.25.2                 # 비동기 HTTP 클라이언트 (테스트용)
+
+# 🖼️ Image Processing & Computer Vision
+opencv-python-headless==4.8.1.78  # OpenCV (GUI 없음, 서버용)
+Pillow==10.1.0                # 이미지 처리 라이브러리
+numpy==1.24.3                 # 수치 계산 라이브러리
+
+# 🤖 Simplified Virtual Try-on Processing
+mediapipe==0.10.8             # 포즈 추출 및 랜드마크 감지
+rembg==2.0.50                 # 배경 제거 라이브러리 (선택사항)
+
+# 📊 Additional Utilities
+scipy==1.11.4                 # 과학 계산 라이브러리
+scikit-image==0.22.0          # 이미지 처리 유틸리티
+
+# 🧪 Development & Testing (선택 사항)
+pytest==7.4.3                # 테스트 프레임워크
+pytest-asyncio==0.21.1       # 비동기 테스트 지원
+black==23.11.0                # 코드 포맷터
+flake8==6.1.0                 # 코드 린터
+
+# 📝 Documentation (선택 사항)
+mkdocs==1.5.3                 # 문서 생성
+mkdocs-material==9.4.8        # 문서 테마
