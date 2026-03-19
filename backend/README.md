@@ -246,7 +246,7 @@ Content-Type: multipart/form-data
 ```
 
 ---
-📌 정리
+### 📌 정리
 
 이 백엔드는 단순 업로드 서버가 아니라,
 웹 프론트엔드와 StableVITON 파이프라인을 연결하는 실제 가상 피팅 서버입니다.
