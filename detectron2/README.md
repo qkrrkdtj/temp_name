@@ -14,10 +14,11 @@
 
 DensePose는 사람 이미지의 신체 부위 정보를 추출하여 StableVITON 추론에 필요한 densepose 입력 이미지를 생성하는 데 사용했습니다.
 
-본 프로젝트에서는 다음 두 단계로 densepose 이미지를 생성했습니다.
+본 프로젝트에서는 다음 세 단계로 densepose 이미지를 생성했습니다.
 
 1. DensePose inference 결과를 `dump` 파일로 저장
-2. dump 파일을 읽어 RGB palette 기반 densepose 이미지로 렌더링
+2. VITONHD 학습 시 사용한 DensePose를 기반으로 palette 추출
+3. dump 파일을 읽어 RGB palette 기반 densepose 이미지로 렌더링
 
 ---
 
@@ -34,6 +35,7 @@ DensePose는 사람 이미지의 신체 부위 정보를 추출하여 StableVITO
 DensePose 생성에는 아래 두 스크립트를 사용했습니다.
 
 - `batch_densepose_dump.py`
+- `palette_to_densepose.py`
 - `render_densepose_from_palette_sample.py`
 
 ### 4-1. `batch_densepose_dump.py`
@@ -45,7 +47,17 @@ DensePose 생성에는 아래 두 스크립트를 사용했습니다.
 출력:
 - `*_densepose_dump.pkl` 파일들
 
-### 4-2. `render_densepose_from_palette_sample.py`
+### 4-2. `palette_to_densepose.py`
+기존 DensePose로부터 추출한 `*_densepose_dump.pkl` 파일들과 기존 DensePose 이미지를 비교하여 `label_palette.json`을 생성하는 스크립트입니다.
+
+입력:
+- 기존 이미지의 DensePose
+- 기존 이미지의 DensePose로부터 추출한 `*_densepose_dump.pkl`
+
+출력:
+- `label_palette.json`
+
+### 4-3. `render_densepose_from_palette_sample.py`
 생성된 dump 파일을 읽어, 가장 적절한 person instance를 선택한 뒤 label을 RGB palette로 변환하여 최종 densepose 이미지를 생성하는 스크립트입니다.
 
 입력:
