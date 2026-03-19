@@ -117,10 +117,10 @@ def render_sample(dump_dir, ref_image_dir, palette_json, out_dir, max_images=20)
 
 
 if __name__ == "__main__":
-    dump_dir = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/custom_dataset/densepose_dumps"
-    ref_image_dir = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/custom_dataset/image"
-    palette_json = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/project/HR-VITON/label_palette.json"
-    out_dir = "/media/kccistc/1024AC1A24AC0536/Users/asd/Desktop/custom_dataset/image-densepose"
+    dump_dir = "/path/densepose_dumps"
+    ref_image_dir = "/path/image"
+    palette_json = "/path/label_palette.json"
+    out_dir = "/path/image-densepose"
 
     render_sample(
         dump_dir=dump_dir,
