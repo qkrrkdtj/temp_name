@@ -71,3 +71,31 @@ project-root/
 ├─ openpose/
 ├─ detectron2/
 └─ Self-Correction-Human-Parsing/
+
+---
+
+## 5. 외부 프로젝트 준비
+이 저장소에는 외부 프로젝트 원본 코드는 포함하지 않았습니다. 아래 프로젝트들은 별도로 준비해야 합니다.
+
+### 5-1. OpenPose
+Windows에서 실행 가능한 OpenPose 빌드가 필요합니다.
+
+- bin/OpenPoseDemo.exe
+- models/
+
+### 5-2. Detectron2 / DensePose
+WSL 환경에서 DensePose를 실행하기 위해 Detectron2와 DensePose가 필요합니다.
+
+- detectron2
+- detectron2/projects/DensePose
+
+###5-3. SCHP
+WSL 환경에서 human parsing을 수행하기 위해 SCHP가 필요합니다.
+
+- simple_extractor.py
+- checkpoints/exp-schp-201908261155-lip.pth
+
+---
+
+## 6. config.py 설정
+파이프라인 실행 전 config.py에서 경로를 반드시 수정해야 합니다.
