@@ -1,6 +1,6 @@
 # Virtual Fitting Pipeline
 
-## Description
+## 프로젝트 소개
 본 프로젝트는 사용자가 사람 이미지와 의상 이미지를 입력하면, 가상 피팅 결과를 생성하는 **Virtual Try-On System**입니다.
 
 시스템은 다음과 같은 구조로 구성됩니다.
@@ -14,14 +14,14 @@
 
 ---
 
-## Project Information
+## 프로젝트 정보
 
 - **프로젝트 기간:** 2026.03.06 ~ 2026.03.19
 - **프로젝트 목표:** 가상 의류 피팅 시스템 구현
 
 ---
 
-## System Architecture
+## 시스템 구성도
 
 ![System Architecture](./docs/images/system.png)
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Pipeline Overview
+## 파이프라인 개요
 
 가상 피팅 파이프라인은 아래 순서로 진행됩니다.
 
@@ -47,7 +47,7 @@
 
 ---
 
-## Project Structure
+## 프로젝트 구조
 
 ```text
 virtual-fitting-pipeline/
@@ -66,14 +66,14 @@ virtual-fitting-pipeline/
 ```
 ---
 
-## Notes
+## 참고 사항
 - 외부 프로젝트 원본 코드는 저장소에 포함하지 않았습니다.
 - 각 외부 모듈은 별도로 설치 후 사용해야 합니다.
 - 경로 및 환경 설정은 각 폴더 README를 참고해주시길 바랍니다.
 
 ---
 
-## Team
+## 팀원 소개
 
 <table>
   <tr>
@@ -118,21 +118,21 @@ virtual-fitting-pipeline/
 
 ---
 
-## Tech Stack
+## 기술 스택
 
-### Backend / Frontend
+### 프론트엔드 / 백엔드
 - Flask
 - FastAPI
 
-### AI / CV
+### AI / 컴퓨터 비전
 - PyTorch
 - OpenCV
 
-### Environment
+### 실행 환경
 - Conda
 - WSL Ubuntu
 
-## AI Models / External Modules
+## AI 모델 / 외부 모듈
 
 - StableVITON
 - OpenPose
