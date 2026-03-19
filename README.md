@@ -14,6 +14,13 @@
 
 ---
 
+## Project Information
+
+- **프로젝트 기간:** 2026.03.06 ~ 2026.03.19
+- **프로젝트 목표:** 가상 의류 피팅 시스템 구현
+
+---
+
 ## System Architecture
 
 ![System Architecture](./docs/images/system.png)
@@ -66,7 +73,7 @@ virtual-fitting-pipeline/
 
 ---
 
-## 👥 Team
+## Team
 
 <table>
   <tr>
@@ -109,9 +116,19 @@ virtual-fitting-pipeline/
   </tr>
 </table>
 
+---
+
 ## Tech Stack
 - Python
+- Flask
+- FastAPI
 - OpenCV
 - PyTorch
+- StableVITON
+- OpenPose
+- SCHP
+- Detectron2 / DensePose
+
+---
 
 
