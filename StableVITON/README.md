@@ -121,7 +121,7 @@ WSL 환경에서 human parsing을 수행하기 위해 SCHP가 필요합니다.
 pipeline/
 └─ input_drop/
    ├─ person/
-   │  └─ user.jpg
+   │  └─ person.jpg
    └─ cloth/
       └─ cloth.jpg
 ```
