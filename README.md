@@ -121,7 +121,7 @@ virtual-fitting-pipeline/
 ## 기술 스택
 
 ### 프론트엔드 / 백엔드
-- Flask
+- React
 - FastAPI
 
 ### AI / 컴퓨터 비전
