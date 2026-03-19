@@ -1,0 +1,5 @@
+backend/uploads/*
+!backend/uploads/person/
+!backend/uploads/person/.gitkeep
+!backend/uploads/cloth/
+!backend/uploads/cloth/.gitkeep

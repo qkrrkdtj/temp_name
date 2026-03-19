@@ -109,7 +109,11 @@ jspm_packages/
 .env.production.local
 
 # Uploaded files and results
-backend/uploads/
+backend/uploads/person/*
+backend/uploads/cloth/*
+!backend/uploads/person/.gitkeep
+!backend/uploads/cloth/.gitkeep
+
 backend/results/
 backend/processing/_tmp/
 
