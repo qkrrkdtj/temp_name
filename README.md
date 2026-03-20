@@ -62,7 +62,9 @@ virtual-fitting-pipeline/
 ├─ detectron2/
 │  └─ README.md
 ├─ backend/
+│  └─ README.md
 ├─ frontend/
+│  └─ README.md
 └─ Self-Correction-Human-Parsing/
    └─ README.md
 ```
