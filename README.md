@@ -5,7 +5,7 @@
 
 시스템은 다음과 같은 구조로 구성됩니다.
 
-- **Flask**: 사용자 인터페이스 제공
+- **React**: 사용자 인터페이스 제공
 - **FastAPI**: 요청 처리 및 파이프라인 실행 제어
 - **StableVITON Pipeline**: 전처리 및 추론 수행
 - **OpenPose / SCHP / DensePose**: 외부 전처리 모듈
